@@ -14,7 +14,7 @@
         "args": [
           "-NoExit",
           "-Command",
-          "& 'D:\\Github\\ESP32\\esp\\esp-idf\\export.ps1'; python --version; git --version;echo 'idf.py --version: '; idf.py --version; cmake --version; ninja --version"
+          "cd esp;& 'D:\\Github\\ESP32\\esp\\esp-idf\\export.ps1'; python --version; git --version;echo 'idf.py --version: '; idf.py --version; cmake --version; ninja --version"
         ]
       }
     },
