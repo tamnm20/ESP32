@@ -102,3 +102,53 @@ void app_main(void)
         vTaskDelay(CONFIG_BLINK_PERIOD / portTICK_PERIOD_MS);
     }
 }
+/*
+ * Simple GPIO Blink Example
+ * Blinks LED on GPIO pin 2 every 1 second
+ */
+
+// #include <stdio.h>
+// #include "freertos/FreeRTOS.h"
+// #include "freertos/task.h"
+// #include "driver/gpio.h"
+
+// // Define LED pin
+// #define LED_PIN GPIO_NUM_2
+
+// // Define blink interval (in milliseconds)
+// #define BLINK_PERIOD 500
+
+// void app_main(void)
+// {
+//     // Configure GPIO pin as output
+//     gpio_config_t gpio_conf = {
+//         .pin_bit_mask = (1ULL << LED_PIN),  // Select pin 2
+//         .mode = GPIO_MODE_OUTPUT,           // Set as output
+//         .pull_up_en = GPIO_PULLUP_DISABLE,  // Disable pull-up
+//         .pull_down_en = GPIO_PULLDOWN_DISABLE, // Disable pull-down
+//         .intr_type = GPIO_INTR_DISABLE      // Disable interrupt
+//     };
+    
+//     // Apply configuration
+//     gpio_config(&gpio_conf);
+    
+//     // Initialize LED state
+//     bool led_state = false;
+    
+//     printf("Starting GPIO Blink on pin %d\n", LED_PIN);
+    
+//     // Main loop
+//     while (1) {
+//         // Toggle LED state
+//         led_state = !led_state;
+        
+//         // Set GPIO level
+//         gpio_set_level(LED_PIN, led_state);
+        
+//         // Print current state
+//         printf("LED %s\n", led_state ? "ON" : "OFF");
+        
+//         // Wait for specified period
+//         vTaskDelay(BLINK_PERIOD / portTICK_PERIOD_MS);
+//     }
+// }

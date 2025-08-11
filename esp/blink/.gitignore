@@ -1,0 +1,6 @@
+*.o
+*.old
+# ESP-IDF default build directory name
+build
+managed_components
+dependencies.lock
