@@ -19,6 +19,12 @@
       }
     },
     "terminal.integrated.defaultProfile.windows": "ESP-IDF PowerShell",
-    "python.pythonPath": "C:\\Users\\MCNEX\\.espressif\\python_env\\idf5.2_py3.8_env\\Scripts\\python.exe"
+    "python.pythonPath": "C:\\Users\\MCNEX\\.espressif\\python_env\\idf5.2_py3.8_env\\Scripts\\python.exe",
+    "files.associations": {
+      "freertos.h": "c",
+      "gpio.h": "c",
+      "led_strip.h": "c",
+      "task.h": "c"
+    }
   }
 }

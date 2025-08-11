@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "ESP-IDF",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/esp/blink/build/config",
+                "D:/Github/ESP32/esp/esp-idf/components/**"
+            ],
+            "defines": [
+                "ESP_PLATFORM",
+                "IDF_VER=\"v5.2.5\"",
+                "_GNU_SOURCE",
+                "_POSIX_READER_WRITER_LOCKS",
+                "CONFIG_IDF_TARGET_ESP32=1",
+                "CONFIG_FREERTOS_HZ=1000"
+            ],
+            "compilerPath": "C:/Users/MCNEX/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp-elf-gcc.exe",
+            "cStandard": "c17",
+            "cppStandard": "c++23",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}
