@@ -4,7 +4,8 @@
             "name": "ESP-IDF",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/esp/blink/build/config",
+                "${workspaceFolder}/esp/blink/build/config",                
+                "${workspaceFolder}/esp/uart_events/build/config",
                 "D:/Github/ESP32/esp/esp-idf/components/**"
             ],
             "defines": [
