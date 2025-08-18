@@ -24,7 +24,8 @@
       "freertos.h": "c",
       "gpio.h": "c",
       "led_strip.h": "c",
-      "task.h": "c"
+      "task.h": "c",
+      "tgpio.h": "c"
     }
   }
 }
