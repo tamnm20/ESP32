@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "driver/gpio.h"
@@ -8,6 +7,7 @@
 #include "tgpio.h"
 #include "exti.h"
 #include "tuart.h"
+#include "ttimer.h"
 
 #define LED 2
 
@@ -32,6 +32,8 @@ void app_main(void)
 
     uart_init();
     uart_set_callback(tam_uart_callback);
+
+    timer_init();
 
     // while(1){
     //     gpio_toggle(LED);
