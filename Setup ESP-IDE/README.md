@@ -9,7 +9,7 @@ copy file .gitignore
 > idf.py -p PORT flash monitor
 
 > idf.py size → Hiển thị tóm tắt dung lượng flash đang dùng:
-
+~~~
 Used static DRAM:   10996 bytes ( 169740 remain, 6.1% used)
       .data size:    8732 bytes
       .bss  size:    2264 bytes
@@ -24,7 +24,7 @@ Total image size:  176861 bytes (.bin may be padded larger)
 DRAM tĩnh mới dùng ~11 KB/≈180 KB vùng tĩnh → còn rất thoải mái cho biến global.
 IRAM dùng ~50 KB/128 KB → còn ~80 KB, ổn; đừng rải IRAM_ATTR bừa bãi.
 Flash cho app ~117 KB; tổng ảnh app ~177 KB → rất nhỏ so với 4 MB flash của ESP32‑WROOM‑32D.
-
+~~~
 > idf.py size-components → Liệt kê dung lượng bộ nhớ mà mỗi component (module) sử dụng.
 
 > idf.py size-files → Liệt kê dung lượng theo từng file .o (object file).
@@ -52,6 +52,7 @@ Ghi chú: 0x290000 + 0x170000 = 0x400000 → tổng đúng 4 MB.
 
 > esptool.exe --port COM7 flash_id
 
+~~~
 Chip is ESP32-D0WD (revision v1.0)
 Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
 Crystal is 40MHz
@@ -63,7 +64,7 @@ Manufacturer: 20
 Device: 4016
 Detected flash size: 4MB
 Flash voltage set by a strapping pin to 3.3V
-
+~~~
 Bảng tóm tắt SRAM trên ESP32‑D0WD (ESP32‑WROOM‑32D)
 
 | Vùng bộ nhớ | Dung lượng điển hình | Công dụng | Ghi chú/Quan sát |
@@ -77,3 +78,6 @@ Bảng tóm tắt SRAM trên ESP32‑D0WD (ESP32‑WROOM‑32D)
 Lưu ý
 - “Tổng SRAM on‑chip” ≈ 520 KB là tổng vật lý; phần ứng dụng thực tế dùng chủ yếu là ~320 KB DRAM và ~128 KB IRAM + 24 KB RTC. 
 - PSRAM không có trên WROOM‑32D (có trên các module WROVER).
+
+
+esp_startup_start_app
