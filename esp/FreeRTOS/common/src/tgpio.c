@@ -18,7 +18,7 @@ void gpio_toggle(gpio_num_t pinNum){
     int toggle_state = gpio_get_level(pinNum);
     toggle_state = !toggle_state;
     gpio_set_level(pinNum, toggle_state);
-    printf("GPIO %d set to: %d\n", pinNum, toggle_state);
+    //printf("GPIO %d set to: %d\n", pinNum, toggle_state);
 }
 
 
