@@ -5,8 +5,8 @@
       "path": "."
     },
     {
-      "name": "💡 TWAI (Sub Project)",
-      "path": "./esp/twai"
+      "name": "💡 ESP32 can bridge (Sub Project)",
+      "path": "./esp/Esp32-can-bridge"
     }
   ],
   "settings": {
@@ -41,7 +41,8 @@
       "button.h": "c",
       "button_pro.h": "c",
       "exti.h": "c",
-      "gpio_types.h": "c"
+      "gpio_types.h": "c",
+      "slcan_parser.h": "c"
     },
 
     // Git Configuration for Multiple Repositories
@@ -49,7 +50,7 @@
     "git.autoRepositoryDetection": "openEditors",
     "git.scanRepositories": [
       ".",
-      "./esp/twai"
+      "./esp/Esp32-can-bridge"
     ],
     
     // Explorer Configuration
