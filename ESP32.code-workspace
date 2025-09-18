@@ -12,13 +12,15 @@
   "settings": {
     // ESP-IDF Terminal Configuration
     "terminal.integrated.env.windows": {
-      "PATH": "C:\\Users\\MCNEX\\.espressif\\python_env\\idf5.2_py3.8_env\\Scripts;C:\\Users\\MCNEX\\.espressif\\tools\\idf-git\\2.30.1\\cmd;${env:PATH}"
+      "PATH": "C:\\Users\\TAMRD\\.espressif\\python_env\\idf5.2_py3.8_env\\Scripts;C:\\Users\\TAMRD\\.espressif\\tools\\idf-git\\2.30.1\\cmd;${env:PATH}"
     },
     "terminal.integrated.profiles.windows": {
       "ESP-IDF PowerShell": {
         "source": "PowerShell",
         "args": [
           "-NoExit",
+          "-ExecutionPolicy",
+          "Bypass",
           "-Command",
           "cd esp;& 'D:\\Github\\ESP32\\esp\\esp-idf\\export.ps1'; python --version; git --version;echo 'idf.py --version: '; idf.py --version; cmake --version; ninja --version"
         ]
@@ -27,7 +29,7 @@
     "terminal.integrated.defaultProfile.windows": "ESP-IDF PowerShell",
     
     // Python Configuration
-    "python.pythonPath": "C:\\Users\\MCNEX\\.espressif\\python_env\\idf5.2_py3.8_env\\Scripts\\python.exe",
+    "python.pythonPath": "C:\\Users\\TAMRD\\.espressif\\python_env\\idf5.2_py3.8_env\\Scripts\\python.exe",
     
     // File Associations
     "files.associations": {
