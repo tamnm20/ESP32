@@ -1,1 +1,26 @@
 .\mosquitto_sub -h localhost -p 1883 -t "#" -v | ForEach-Object { [System.Text.Encoding]::UTF8.GetBytes($_) | Format-Hex }
+
+Topic = CAN/s/<ID>
+
+Payload:
+
+[0-7]   = Timestamp (uint64_t, little‑endian, microseconds epoch)
+
+[8]     = Flags (bitmask: ext=1, rtr=2, fd=4, err=8)
+
+[9..N]  = CAN data bytes (frame.payload(), thường 8 byte)
+
+
+Payload từ byte 0 đến 7 = timestamp 64bit.
+(timestamp (microsecond), convert 64-bit little‑endian (8 byte))
+
+Payload byte 8 = flags
+
+0x00 = Standard frame
+0x01 = Extended CAN ID flag
+0x02 = Remote Request (RTR)
+0x04 = CAN FD (FDF)
+0x08 = Error frame
+
+Payload byte 9 đến 16 = 8 bytes data (với DLC=8).
+Nếu CAN FD thì data có thể dài hơn (0–64 byte).
