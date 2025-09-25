@@ -16,7 +16,7 @@
                 "CONFIG_IDF_TARGET_ESP32=1",
                 "CONFIG_FREERTOS_HZ=1000"
             ],
-            "compilerPath": "C:/Users/MCNEX/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp-elf-gcc.exe",
+            "compilerPath": "C:/Users/TAMRD/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20230928/xtensa-esp-elf/bin/xtensa-esp-elf-gcc.exe",
             "cStandard": "c17",
             "cppStandard": "c++23",
             "intelliSenseMode": "gcc-x64"
